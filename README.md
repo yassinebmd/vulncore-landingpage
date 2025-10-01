@@ -2,7 +2,13 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+# Run locally
+1. git clone https://github.com/yassinebmd/vulncore-landingpage.git
+2. cd vulncore-landingpage
+3. npm install
+4. cp .env.example .env.local  
+5. npm run dev
+Open http://localhost:3000
 
 ```bash
 npm run dev
