@@ -15,7 +15,7 @@ import {
   Zap,
   Target
 } from "lucide-react";
-export const FeaturesSection = () => {
+export const FeaturesSection = ({id}) => {
     const features = [
     {
       icon: <Zap className="h-6 w-6" />,
@@ -50,7 +50,7 @@ export const FeaturesSection = () => {
   ];
 
     return (
-        <section className=" py-20 px-4 sm:px-6 lg:px-8">
+        <section id={id} className=" py-20 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">

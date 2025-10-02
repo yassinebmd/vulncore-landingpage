@@ -4,7 +4,7 @@ import React from "react";
 import { Card, CardContent } from "./ui/card";
 import { Cloud, Server, GitBranch } from "lucide-react";
 
-export const Deployment = () => {
+export const Deployment = ({id}) => {
   const deploymentOptions = [
     {
       title: "SaaS",
@@ -24,7 +24,7 @@ export const Deployment = () => {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id={id} className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">

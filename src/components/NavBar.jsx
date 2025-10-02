@@ -3,41 +3,49 @@
 import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const navItems = [
     { name: "Features", href: "#features" },
     { name: "Audiences", href: "#audiences" },
     { name: "Deployment", href: "#deployment" },
-    { name: "Contact", href: "#contact" },
+    { name: "Contact",  href: "/contact" },
   ];
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+  const getHref = (itemHref) => {
+    if (itemHref.startsWith('#')) {
+      // If not on homepage, prepend '/' to make it absolute path
+      return pathname === '/' ? itemHref : `/${itemHref}`;
+    }
+    return itemHref;
   };
 
   return (
     <nav className="bg-[#0F172A] shadow-sm  ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <span className="text-2xl font-bold text-white">vulnCore</span>
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.name}
-                  href={item.href}
+                  href={getHref(item.href)}
                   className="text-white hover:text-[#14B8A6] px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
