@@ -126,3 +126,26 @@ html {
   scroll-padding-top: 4rem;
   
 }
+
+@layer components {
+  .text-brand {
+    color: #14B8A6;
+  }
+  
+  .bg-brand {
+    background-color: #14B8A6;
+  }
+  
+  .bg-brand-backdrop {
+    background-color: rgb(100, 203, 191);
+    backdrop-filter: blur(10px);
+  }
+  
+  .border-brand {
+    border-color: #14B8A6;
+  }
+  
+  .hover-bg-brand:hover {
+    background-color: #128275;
+  }
+}
