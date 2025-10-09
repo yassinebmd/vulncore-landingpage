@@ -131,6 +131,9 @@ html {
   .text-brand {
     color: #14B8A6;
   }
+  .hover-text-brand:hover {
+    color: #128275;
+  }
   
   .bg-brand {
     background-color: #14B8A6;
