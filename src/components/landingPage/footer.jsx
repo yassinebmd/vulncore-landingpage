@@ -52,7 +52,6 @@ export const Footer = () => {
                                 <li><Link href="/about" className="hover:text-brand transition-colors">About</Link></li>
                                 <li><Link href="/features" className="hover:text-brand transition-colors">Features</Link></li>
                                 <li><Link href="/pricing" className="hover:text-brand transition-colors">Pricing</Link></li>
-                                <li><Link href="/contact" className="hover:text-brand transition-colors">Contact</Link></li>
                             </ul>
                         </div>
 
@@ -60,9 +59,9 @@ export const Footer = () => {
                         <div>
                             <h4 className="text-white font-semibold mb-4">Resources</h4>
                             <ul className="space-y-2 text-gray-400">
-                                <li><Link href="/docs" className="hover:text-brand transition-colors">Documentation</Link></li>
-                                <li><Link href="/blog" className="hover:text-brand transition-colors">Blog</Link></li>
-                                <li><Link href="/support" className="hover:text-brand transition-colors">Support</Link></li>
+                                <li><Link href="/Cooperation" className="hover:text-brand transition-colors">Cooperation</Link></li>
+                                <li><Link href="/blog" className="hover:text-brand transition-colors">Company</Link></li>
+                                <li><Link href="/support" className="hover:text-brand transition-colors">Contact</Link></li>
                             </ul>
                         </div>
 
