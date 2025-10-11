@@ -6,6 +6,7 @@ import { Card, CardContent } from "../ui/card";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { MessageCircle, Send } from "lucide-react";
+import { ComboboxDemo } from "../ui/combobox";
 
 export const ContactForm = () => {
   const firstNameRef = useRef();
@@ -13,22 +14,24 @@ export const ContactForm = () => {
   const emailRef = useRef();
   const companyRef = useRef();
   const messageRef = useRef();
+  const statusRef = useRef();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    
+
     const formData = {
       firstName: firstNameRef.current?.value || "",
       lastName: lastNameRef.current?.value || "",
       email: emailRef.current?.value || "",
       company: companyRef.current?.value || "",
-      message: messageRef.current?.value || ""
+      message: messageRef.current?.value || "",
+      status: statusRef.current?.value || "",
     };
-    
+
     console.log("Form Data:", formData);
 
     event.target.reset();
-    
+
     alert("Message sent successfully!");
   };
 
@@ -92,6 +95,12 @@ export const ContactForm = () => {
               placeholder="Tell us about your cybersecurity training needs..."
               required
             />
+          </div>
+          <div className="space-y-2">
+            <label className="text-sm font-medium text-gray-300">Status</label>
+            <div className="bg-gray-700/50 border border-gray-600 rounded-md focus-within:border-brand transition-colors duration-200">
+              <ComboboxDemo className="custom-combobox" ref={statusRef} required/>
+            </div>
           </div>
 
           <Button

@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Mail, Calendar } from "lucide-react";
@@ -12,7 +10,6 @@ export default function TermsAndConditions() {
       <NavBar />
       <div className="min-h-screen bg-gradient-to-b from-[#0F172A] to-[#1E293B] py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          {/* Header */}
           <div className="text-center mb-12">
             <div className="flex justify-center items-center gap-3 mb-6">
               <div className="p-3 bg-cyan-500/10 rounded-xl">
@@ -33,18 +30,15 @@ export default function TermsAndConditions() {
             </div>
           </div>
 
-          {/* Terms Content */}
           <Card className="bg-gray-800/30 backdrop-blur-sm border-gray-700 rounded-2xl">
             <CardContent className="p-8">
               <div className="prose prose-invert prose-lg max-w-none">
-                {/* Introduction */}
                 <div className="mb-8">
                   <p className="text-gray-300 text-lg leading-relaxed">
                     These Terms and Conditions ("Terms") govern your access to and use of the Vulncore website, content, products, and services (collectively, the "Services"). By accessing or using the Services, you agree to be bound by these Terms. If you do not agree, do not use the Services.
                   </p>
                 </div>
 
-                {/* Section 1 */}
                 <div className="mb-8">
                   <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
                     <span className="bg-brand text-white rounded-full w-8 h-8 flex items-center justify-center text-sm">1</span>
@@ -55,7 +49,6 @@ export default function TermsAndConditions() {
                   </p>
                 </div>
 
-                {/* Section 2 */}
                 <div className="mb-8">
                   <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
                     <span className="bg-brand text-white rounded-full w-8 h-8 flex items-center justify-center text-sm">2</span>
@@ -66,7 +59,6 @@ export default function TermsAndConditions() {
                   </p>
                 </div>
 
-                {/* Section 3 */}
                 <div className="mb-8">
                   <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
                     <span className="bg-brand text-white rounded-full w-8 h-8 flex items-center justify-center text-sm">3</span>
@@ -82,7 +74,6 @@ export default function TermsAndConditions() {
                   </ul>
                 </div>
 
-                {/* Section 4 */}
                 <div className="mb-8">
                   <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
                     <span className="bg-brand text-white rounded-full w-8 h-8 flex items-center justify-center text-sm">4</span>
@@ -93,7 +84,6 @@ export default function TermsAndConditions() {
                   </p>
                 </div>
 
-                {/* Section 5 */}
                 <div className="mb-8">
                   <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
                     <span className="bg-brand text-white rounded-full w-8 h-8 flex items-center justify-center text-sm">5</span>
@@ -115,7 +105,6 @@ export default function TermsAndConditions() {
                   </p>
                 </div>
 
-                {/* Section 7 */}
                 <div className="mb-8">
                   <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
                     <span className="bg-brand text-white rounded-full w-8 h-8 flex items-center justify-center text-sm">7</span>
@@ -126,7 +115,6 @@ export default function TermsAndConditions() {
                   </p>
                 </div>
 
-                {/* Section 8 */}
                 <div className="mb-8">
                   <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
                     <span className="bg-brand text-white rounded-full w-8 h-8 flex items-center justify-center text-sm">8</span>
@@ -148,7 +136,6 @@ export default function TermsAndConditions() {
                   </p>
                 </div>
 
-                {/* Section 10 */}
                 <div className="mb-8">
                   <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
                     <span className="bg-brand text-white rounded-full w-8 h-8 flex items-center justify-center text-sm">10</span>
@@ -159,7 +146,6 @@ export default function TermsAndConditions() {
                   </p>
                 </div>
 
-                {/* Section 11 */}
                 <div className="mb-8">
                   <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
                     <span className="bg-brand text-white rounded-full w-8 h-8 flex items-center justify-center text-sm">11</span>
@@ -170,7 +156,6 @@ export default function TermsAndConditions() {
                   </p>
                 </div>
 
-                {/* Section 12 */}
                 <div className="mb-8">
                   <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
                     <span className="bg-brand text-white rounded-full w-8 h-8 flex items-center justify-center text-sm">12</span>
@@ -184,7 +169,6 @@ export default function TermsAndConditions() {
                   </p>
                 </div>
 
-                {/* Acceptance Note */}
                 <div className="mt-12 p-6 bg-gray-700/30 rounded-xl border-l-4 border-brand">
                   <p className="text-gray-300 text-lg font-medium">
                     By using our Services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.

@@ -154,3 +154,13 @@ html {
 
   
 }
+
+.custom-combobox {
+  background-color: rgba(55, 65, 81, 0.5) !important;
+  border-color: rgb(75, 85, 99) !important;
+  color: white !important;
+}
+
+.custom-combobox:focus {
+  border-color: #14B8A6 !important;
+}
